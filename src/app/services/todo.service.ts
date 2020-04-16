@@ -16,16 +16,11 @@ export class TodoService {
     },
   ];
   constructor() {}
-  getTodos(status) {
-    if (status === "Todo") {
-      return this.todoList.filter(status);
-    } else if (status === "Doing") {
-      return this.todoList.filter(status);
-    } else if (status === "Done") {
-      return this.todoList.filter(status);
-    } else {
+  getTodos(status?) {
+    if (!status) {
       return this.todoList;
     }
+    return this.todoList.filter((t) => status === t.status);
   }
   deleteTodo(todo: ITodo) {
     const index = this.todoList.findIndex((todoItem) => todoItem === todo);

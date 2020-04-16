@@ -8,6 +8,7 @@ import { CreateTodoComponent } from "./create-todo/create-todo.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { ConfirmationModalComponent } from "./confirmation-modal/confirmation-modal.component";
 import { RouterModule } from "@angular/router";
+import { BoardComponent } from './board/board.component';
 
 const routes = [];
 const appRoutes = RouterModule.forRoot(routes);
@@ -19,6 +20,7 @@ const appRoutes = RouterModule.forRoot(routes);
     TodoListComponent,
     CreateTodoComponent,
     ConfirmationModalComponent,
+    BoardComponent,
   ],
   imports: [BrowserModule, appRoutes, FormsModule, NgbModule],
   providers: [],
