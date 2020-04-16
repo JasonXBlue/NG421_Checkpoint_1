@@ -5,9 +5,15 @@ import { ITodo } from "../interfaces/itodo";
 })
 export class TodoService {
   todoId: number = 0;
+  statuses: [string, string, string] = ["Todo", "Doing", "Done"];
   todoList: ITodo[] = [
     // example of how to make an item in todo list
-    { title: "Install Angular CLI", id: this.todoId },
+    {
+      title: "Install Angular CLI",
+      id: this.todoId,
+      status: "Todo",
+      createdAt: new Date(),
+    },
   ];
   constructor() {}
   getTodos() {
@@ -20,5 +26,8 @@ export class TodoService {
   addTodo(todo: ITodo): void {
     todo.id = this.todoId++;
     this.todoList.push(todo);
+  }
+  getStatuses() {
+    return this.statuses;
   }
 }
