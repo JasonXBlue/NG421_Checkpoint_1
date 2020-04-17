@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit } from "@angular/core";
+import { NgbModalRef } from "@ng-bootstrap/ng-bootstrap";
+import { ITodo } from "../interfaces/itodo";
 @Component({
-  selector: 'app-todo-edit',
-  templateUrl: './todo-edit.component.html',
-  styleUrls: ['./todo-edit.component.css']
+  selector: "app-todo-edit",
+  templateUrl: "./todo-edit.component.html",
+  styleUrls: ["./todo-edit.component.css"],
 })
 export class TodoEditComponent implements OnInit {
+  modalInstance: NgbModalRef;
+  todo: ITodo;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
