@@ -16,6 +16,7 @@ import { MatTableModule } from "@angular/material/table";
 import { MatSortModule } from "@angular/material/sort";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
+import { MatPaginatorModule } from "@angular/material/paginator";
 
 const routes = [
   { path: "table", component: TodoTableComponent },
@@ -44,6 +45,7 @@ const appRoutes = RouterModule.forRoot(routes);
     MatSortModule,
     MatInputModule,
     MatFormFieldModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
