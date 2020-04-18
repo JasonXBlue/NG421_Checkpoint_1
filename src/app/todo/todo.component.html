@@ -13,7 +13,13 @@
     </option>
   </select>
   <div class="float-right">
-    <button type="button" class="btn-sm">Edit</button>
+    <button
+      type="button"
+      (click)="editDescription(todo)"
+      class="btn btn-primary btn-sm"
+    >
+      Edit
+    </button>
     <button
       type="button"
       (click)="deleteTodo(todo)"
