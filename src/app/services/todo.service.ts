@@ -4,6 +4,9 @@ import { ITodo } from "../interfaces/itodo";
   providedIn: "root",
 })
 export class TodoService {
+  static getTodos(): ITodo[] {
+    throw new Error("Method not implemented.");
+  }
   todoId: number = 0;
   statuses: [string, string, string] = ["Todo", "Doing", "Done"];
   todoList: ITodo[] = [
