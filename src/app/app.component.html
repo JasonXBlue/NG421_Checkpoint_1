@@ -1,6 +1,23 @@
-<h1 align="center">Todo List</h1>
-<app-create-todo></app-create-todo>
-<app-board></app-board>
-<app-todo-table></app-todo-table>
+<!-- <h1 align="center">Todo List</h1> -->
+<nav>
+  <a
+    routerLink="/table"
+    routerLinkActive="active"
+    type="button"
+    class="btn btn-primary"
+    >Todo Table</a
+  >
+  <a
+    routerLink="/board"
+    routerLinkActive="active"
+    type="button"
+    class="btn btn-secondary"
+    >Todo Board</a
+  >
+</nav>
+<br />
+<!-- <app-create-todo></app-create-todo> -->
+<!-- <app-board></app-board> -->
+<!-- <app-todo-table></app-todo-table> -->
 
 <router-outlet></router-outlet>
