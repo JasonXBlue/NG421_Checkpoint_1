@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { NgbModalRef } from "@ng-bootstrap/ng-bootstrap";
 import { ITodo } from "../interfaces/itodo";
-import { TextFieldModule } from "@angular/cdk/text-field";
 
 @Component({
   selector: "app-todo-edit",
@@ -17,9 +16,9 @@ export class TodoEditComponent implements OnInit {
     let modal = this.modalInstance.close(this.newDescription);
   }
 
-  // cancel() {
-  //   this.modalInstance.close(this.todo.description);
-  // }
+  close() {
+    this.modalInstance.close();
+  }
 
   constructor() {}
 

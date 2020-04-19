@@ -3,8 +3,6 @@
     <tbody>
       <td *ngIf="todo.status === 'Todo'" style="color: black;">
         {{ todo.title }}
-        <br />
-        {{ todo.description }}
       </td>
       <td *ngIf="todo.status === 'Doing'" style="color: green;">
         {{ todo.title }}
@@ -26,7 +24,7 @@
       {{ status }}
     </option>
   </select>
-  <div class="float-right">
+  <div class="float-right form-group">
     <button type="button" (click)="editTodo()" class="btn btn-primary btn-sm">
       Edit
     </button>
