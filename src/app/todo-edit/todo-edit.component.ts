@@ -13,7 +13,7 @@ export class TodoEditComponent implements OnInit {
   newDescription: string;
 
   edit(): void {
-    let modal = this.modalInstance.close(this.newDescription);
+    this.modalInstance.close(this.newDescription);
   }
 
   close() {
