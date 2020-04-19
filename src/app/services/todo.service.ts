@@ -8,7 +8,7 @@ export class TodoService {
     throw new Error("Method not implemented.");
   }
   todoId: number = 0;
-  statuses: [string, string, string] = ["Todo", "Doing", "Done"];
+  statuses: string[] = ["Todo", "Doing", "Done"];
   todoList: ITodo[] = [
     // example of how to make an item in todo list
     {
