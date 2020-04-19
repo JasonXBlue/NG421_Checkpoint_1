@@ -21,13 +21,8 @@
   <!-- Title Column -->
   <ng-container matColumnDef="title">
     <th mat-header-cell *matHeaderCellDef mat-sort-header>
-      <!-- <mat-form-field appearance="outline">
-        <mat-label>Name</mat-label>
-        <input matInput placeholder="Sort" />
-        <mat-hint>Hint</mat-hint>
-      </mat-form-field> -->
       <font color="#C2185B">Title</font>
-      <mat-form-field>
+      <mat-form-field appearance="outline">
         <input
           matInput
           placeholder="Filter"
@@ -60,7 +55,7 @@
 
   <!-- CreatedAt Column -->
   <ng-container matColumnDef="createdAt">
-    <th mat-header-cell *matHeaderCellDef>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>
       <font color="#C2185B">CreatedAt</font>
     </th>
     <td mat-cell *matCellDef="let element">
