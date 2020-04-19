@@ -1,5 +1,19 @@
 <div class="view">
-  <label (dblclick)="isEditing = true">{{ todo.title }}</label>
+  <label (dblclick)="isEditing = true">
+    <tbody>
+      <td *ngIf="todo.status === 'Todo'" style="color: black;">
+        {{ todo.title }}
+        <br />
+        {{ todo.description }}
+      </td>
+      <td *ngIf="todo.status === 'Doing'" style="color: green;">
+        {{ todo.title }}
+      </td>
+      <div *ngIf="todo.status === 'Done'" style="color: red;">
+        <s>{{ todo.title }}</s>
+      </div>
+    </tbody>
+  </label>
   <input
     type="text"
     *ngIf="isEditing"
